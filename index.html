@@ -15,8 +15,8 @@
 
         <header>
                 
-            <div class="container-fluid color_header"> <!--sfondo-->
-                <div class="container d-flex align-items-center">
+            <div class="container-fluid color_header py-3"> <!--sfondo-->
+                <div class="container-sm container-lg d-flex align-items-center">
                     <div class="w-100">
                         <div class="row text-uppercase text-white">
                             <div class="col d-flex align-items-center">
@@ -27,7 +27,7 @@
     
                             <div class="col-2 col-md offset-4 offset-md-0 d-flex align-items-center justify-content-end">
                                 <div class="d-block d-md-none">
-                                    <i class="bi bi-list d-block border border-secondary-subtle py-1 px-3 rounded-2"></i>
+                                    <a href="#nogo" class="d-block border border-secondary py-1 px-3 rounded-2 text-secondary"><i class="bi bi-list"></i></a>
                                 </div>
 
                                 <nav class="d-md-block d-none fw-semibold">
@@ -51,7 +51,7 @@
         <main>
             <section>
                 <div class="container-fluid">
-                    <div class="container">
+                    <div class="container-sm container-lg">
                         <div class="jumbotron p-4 text-white text-center">
                             <div class="img-container mx-auto">
                                 <img src="img/avatar.svg" alt="avatar">
@@ -84,10 +84,10 @@
             </section>
 
 
-            <section id="portfolio">
-                <div class="container text-center">
+            <section id="portfolio" class="pb-5">
+                <div class="container-sm text-center container-lg">
 
-                    <h2 class="display-5 text-uppercase my-5 fw-normal">
+                    <h2 class="display-6 text-uppercase my-5 fw-semibold">
                         portfolio
                     </h2>
 
@@ -151,9 +151,9 @@
             </section>
 
             <section id="about">
-                <div class="container-fluid">
-                    <div class="container">
-                        <div class="p-5 text-center text-white">
+                <div class="container-fluid py-5">
+                    <div class="container-sm container-lg">
+                        <div class="pb-4 text-center text-white">
                             <h2 class="text-uppercase fw-semibold">
                                 about
                             </h2>
@@ -176,7 +176,7 @@
                         </div>
 
                         <div class="row row-cols-md-2 justify-content-center text-white">
-                            <div class="col-7">
+                            <div class="col-7 col-md-4 col-lg-6 px-2">
                                <p>
                                 Freelancer is a free bootstrap theme created by STARTBootstrap.
                                 The download includes the complete scource
@@ -185,7 +185,7 @@
                                </p>
                             </div>
 
-                            <div class="col-7">
+                            <div class="col-7 col-md-4 col-lg-6 px-2">
                                 <p>
                                  Freelancer is a free bootstrap theme created by STARTBootstrap.
                                  The download includes the complete scource
@@ -193,15 +193,75 @@
                                  optional LESS stylesheet for easy customization.
                                 </p>
                              </div>
+                             
+                             <div class="col-7 text-center mt-3">
+                                <a class="btn btn-outline-light" href="#nogo" role="button"><i class="bi bi-download"></i> Download</a>
+                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
+            <section id="contact_me">
+                <div class="container-fluid">
+                    <div class="container text-center">
+
+                        <h2 class="display-6 text-uppercase my-5 fw-semibold">
+                           contact me 
+                        </h2>
+
+                    
+
+                        <div class="gx-0 row justify-content-center text-black mb-2">
+
+                        <div class="col-3">
+                           <hr>
+                        </div>
+
+                        <div class="col-1 text-center">
+                           <i class="bi bi-star-fill fs-3 d-block"></i>
+                        </div>
+
+                        <div class="col-3">
+                           <hr>
+                        </div>
+                    
+                        <div class="text-start px-5">
+                            <form>
+                                <div class="mb-3 row border-bottom border-secondary">
+                                    <div class="col-sm-10">
+                                      <input type="text" readonly class="form-control-plaintext" placeholder="Name" id="staticEmail">
+                                    </div>
+                                </div>
+
+                                <div class="mb-3 row border-bottom border-secondary">
+                                    <div class="col-sm-10">
+                                      <input type="text" readonly class="form-control-plaintext border-bottom-secondary" placeholder="Email Addres" id="staticEmail">
+                                    </div>
+                                </div>
+
+                                <div class="mb-3 row border-bottom border-secondary">
+                                    <div class="col-sm-10">
+                                      <input type="text" readonly class="form-control-plaintext border-bottom-secondary" placeholder="Phone Number" id="staticEmail">
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Message</label>
+                                <div>
+                                    <textarea name="" id="" cols="55" rows="10"></textarea>
+                                </div>
+                                <button type="submit" class="btn text-white mt-5">Send</button>
+                            </form> 
+                        </div>
+                        
+                    </div>
+                </div> 
+            </section>
         </main>
 
         <footer>
-            <!-- FOOTER -->
+            
         </footer>
     </body>
 </html>

@@ -25,12 +25,15 @@ html{
     MAIN
 */
 
+#contact_me button{
+    background-color: var(--main_color);
+}
 
 #portfolio .img-container{
     width: 100%;
 }
 
-#portfolio hr{
+#portfolio hr, #contact_me hr{
     border: 2px solid black;
     opacity: 100%;
 }
@@ -57,7 +60,7 @@ img{
 
 
 
-main > section > .container-fluid:nth-child(odd){
+main > section:nth-child(odd) > .container-fluid{
     background-color: #1abc9c;
 }
 
@@ -68,19 +71,3 @@ main > section > .container-fluid:nth-child(odd){
     DEBUG
 */
 
-
-header .container-fluid .container{
-    min-height: 80px;
-    border: 1px dashed black;
-}
-
-header .container-fluid .container .col, header .container-fluid .container .col-2{
-    min-height: 50px;
-    border: 2px dashed red;
-}
-
-
-main .jumbotron{
-    min-height: 300px;
-    border: 1px solid aqua;
-}
