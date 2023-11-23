@@ -23,13 +23,15 @@ html{
     background-color:  var(--header_color);
 }
 
-.color_main{
-    color: var(--main_color);
-}
+
 
 /*
     MAIN
 */
+
+.color_main{
+    color: var(--main_color);
+}
 
 #contact_me button{
     background-color: var(--main_color);
@@ -66,16 +68,15 @@ img{
 
 
 
-main > section:nth-child(odd) > .container-fluid{
+main > section:nth-child(odd){
     background-color: #1abc9c;
 }
 
 
+/*
+    FOOTER
+*/
+
 .footer_top{
     background-color: var(--footer_top);
 }
-
-/*
-    DEBUG
-*/
-
